@@ -1,5 +1,4 @@
 # 🏭 Análisis de Tiempos de Paro en Fábrica con SQL + Python
-# 🏭 Manufacturing Downtime Analysis with SQL + Python
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org)
 [![MySQL](https://img.shields.io/badge/MySQL-Database-orange.svg)](https://www.mysql.com)
