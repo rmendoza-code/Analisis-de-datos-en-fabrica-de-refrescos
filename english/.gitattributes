@@ -1,0 +1,24 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Python files
+*.py text diff=python
+
+# SQL files
+*.sql text
+
+# Jupyter notebook
+*.ipynb text
+
+# Documentation
+*.md text diff=markdown
+LICENSE text
+
+# Data files
+*.csv text
+*.json text
+
+# Windows scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
