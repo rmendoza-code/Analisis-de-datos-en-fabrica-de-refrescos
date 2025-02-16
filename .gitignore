@@ -1,0 +1,28 @@
+# Ignorar carpetas redundantes
+espanol/
+Manufacturing_Downtime/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

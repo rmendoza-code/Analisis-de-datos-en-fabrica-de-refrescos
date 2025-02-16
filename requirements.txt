@@ -1,0 +1,19 @@
+# Manipulación y análisis de datos
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Conectividad con base de datos
+sqlalchemy>=2.0.0
+pymysql>=1.1.0
+
+# Visualización
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Análisis estadístico
+scipy>=1.10.0
+pyspc>=0.4.0
+
+# Entorno Jupyter
+jupyter>=1.0.0
+ipykernel>=6.0.0

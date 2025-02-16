@@ -1,0 +1,52 @@
+-- MySQL dump 10.13  Distrib 8.0.40, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: line_manufacturing
+-- ------------------------------------------------------
+-- Server version	8.0.40
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `normalizeddowntime`
+--
+
+DROP TABLE IF EXISTS `normalizeddowntime`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `normalizeddowntime` (
+  `batch` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `factor` int NOT NULL,
+  `downtime_minutes` int DEFAULT NULL,
+  PRIMARY KEY (`batch`,`factor`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `normalizeddowntime`
+--
+
+LOCK TABLES `normalizeddowntime` WRITE;
+/*!40000 ALTER TABLE `normalizeddowntime` DISABLE KEYS */;
+INSERT INTO `normalizeddowntime` VALUES ('422111',2,60),('422111',7,15),('422112',2,20),('422112',8,20),('422113',2,50),('422114',4,25),('422114',6,15),('422115',10,24),('422117',2,10),('422117',6,5),('422118',6,14),('422118',7,16),('422118',11,10),('422118',12,20),('422119',4,25),('422120',4,20),('422120',5,15),('422120',9,17),('422121',7,15),('422122',7,25),('422123',4,43),('422123',7,30),('422124',5,20),('422124',6,20),('422125',11,10),('422125',12,10),('422126',8,44),('422127',6,23),('422128',5,22),('422128',7,30),('422129',12,15),('422130',2,20),('422131',4,20),('422131',10,10),('422133',7,20),('422134',7,30),('422134',8,20),('422135',4,30),('422135',12,15),('422137',8,30),('422137',10,15),('422138',3,20),('422139',4,20),('422139',6,15),('422140',6,50),('422140',11,13),('422141',12,7),('422142',6,30),('422143',6,40),('422143',7,18),('422144',6,30),('422144',8,24),('422145',3,22),('422146',6,30),('422146',7,25),('422146',12,7),('422147',4,17),('422147',6,60),('422147',7,30),('422148',4,25),('422148',8,7);
+/*!40000 ALTER TABLE `normalizeddowntime` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-02-13 23:02:13
